@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tik Tak Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+</head>
+
+<body onload="initGame();">
+    <h1>Ta te ti</h1>
+    <h2>Turno de <span id="turno"></span></h2>
+    <h2 id="resultado"><span id="turno"></span></h2>
+    <div id="container">
+        <div id="cartel" class="nodisp">
+            <div id="mensaje"></div><button id="reiniciar" onclick="initGame();">Jugar de nuevo</button>
+        </div>
+        <table class="sinBordeIzq">
+            <tr>
+                <td class="sinBordeTop , sinBordeIzq" onclick="play(0,0);"></td>
+                <td class="sinBordeTop , sinBordeRight" onclick="play(0,1);"></td>
+                <td class="sinBordeTop , sinBordeRight" onclick="play(0,2);"></td>
+            </tr>
+            <tr>
+                <td class="sinBordeIzq" onclick="play(1,0);"></td>
+                <td class="sinBordeIzq" onclick="play(1,1);"></td>
+                <td class="sinBordeIzq ,   sinBordeRight" onclick="play(1,2);"></td>
+            </tr>
+            <tr>
+                <td class="sinBordeIzq , sinBordeBottom" onclick="play(2,0)"></td>
+                <td class="sinBordeBottom , sinBordeRight" onclick="play(2,1)"></td>
+                <td class="sinBordeBottom , sinBordeRight" onclick="play(2,2)"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="app.js">
+
+    </script>
+
+
+</body>
